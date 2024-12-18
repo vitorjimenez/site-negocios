@@ -1,0 +1,168 @@
+/* Estilo do cabeçalho principal */
+.header-main {
+    text-align: center;
+    margin: 2% auto;
+    max-width: 900px;
+    padding: 0 10px; /* Espaçamento lateral para telas menores */
+  }
+  
+  /* Contêiner principal para texto e imagem */
+  .home-div-inicial-content {
+    display: flex; /* Alinha os elementos lado a lado */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Cria espaço entre os elementos */
+    gap: 20px; /* Espaçamento entre texto e imagem */
+    margin-top: 20px;
+  }
+  
+  /* Estilo do parágrafo */
+  .home-div-inicial-content p {
+    font-size: 25px;
+    line-height: 1.6;
+    flex: 1; /* Faz o texto ocupar o espaço necessário */
+    margin: 0;
+    text-align: left; /* Alinha o texto à esquerda */
+  }
+  
+  /* Estilo do bloco da imagem */
+  .home-img-inicial-content {
+    background-color: #d9d9d9; /* Cor de fundo cinza */
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center; /* Centraliza a imagem no bloco */
+    justify-content: center;
+  }
+  
+  .home-img-inicial-content img {
+    max-width: 100%; /* Imagem responsiva */
+    max-height: 100%; /* Evita distorções */
+    border-radius: 10px;
+  }
+  
+  /* Estilo do título */
+  .header-main h1 {
+    font-size: 28px;
+    margin-top: 10%;
+    margin-bottom: 15%;
+  }
+  
+  /* === Responsividade === */
+  
+  /* Telas menores que 768px (tablets e celulares maiores) */
+  @media (max-width: 768px) {
+    .home-div-inicial-content {
+      flex-direction: column; /* Elementos empilhados em coluna */
+      text-align: center; /* Centraliza o texto */
+    }
+  
+    .home-div-inicial-content p {
+      margin-bottom: 20px; /* Espaço entre o texto e a imagem */
+      text-align: center; /* Centraliza o texto */
+    }
+  
+    .home-img-inicial-content {
+      width: 100%; /* Ocupa toda a largura disponível */
+      max-width: 300px; /* Limite de tamanho para imagens */
+      margin: 0 auto; /* Centraliza a imagem */
+    }
+  }
+  
+  /* Telas menores que 480px (celulares pequenos) */
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 24px; /* Reduz o tamanho do título */
+    }
+  
+    .home-div-inicial-content p {
+      font-size: 16px; /* Ajusta o tamanho do texto */
+    }
+  
+    .home-img-inicial-content {
+      max-width: 250px; /* Ajusta o tamanho da imagem */
+    }
+  }
+
+  .next-section {
+    text-align: center;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 0 20px; /* Espaçamento lateral */
+  }
+  
+  .next-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Contêiner principal */
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaço entre os elementos */
+  }
+  
+  /* Imagem grande */
+  .large-image {
+    background-color: #d9d9d9; /* Cor de fundo simulando a imagem */
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+  }
+  
+  /* Grade de imagens */
+  .grid-images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Quatro colunas iguais */
+    gap: 15px; /* Espaço entre os itens */
+  }
+  
+  .grid-item {
+    background-color: #d9d9d9; /* Cor de fundo simulando a imagem */
+    height: 120px;
+    border-radius: 10px;
+  }
+  
+  /* === Responsividade === */
+  
+  /* Telas menores que 768px (tablets e celulares maiores) */
+  @media (max-width: 768px) {
+    .main-content {
+      gap: 15px; /* Reduz o espaçamento entre os elementos */
+    }
+  
+    .large-image {
+      height: 180px; /* Reduz a altura da imagem grande */
+    }
+  
+    .grid-images {
+      grid-template-columns: repeat(2, 1fr); /* Duas colunas na grade */
+      gap: 10px; /* Menor espaçamento */
+    }
+  
+    .grid-item {
+      height: 100px; /* Reduz a altura das imagens menores */
+    }
+  }
+  
+  /* Telas menores que 480px (celulares pequenos) */
+  @media (max-width: 480px) {
+    .next-section h2 {
+      font-size: 20px; /* Reduz o tamanho do título */
+    }
+  
+    .large-image {
+      height: 150px; /* Ajusta a altura da imagem grande */
+    }
+  
+    .grid-images {
+      grid-template-columns: 1fr; /* Uma coluna (itens empilhados) */
+    }
+  
+    .grid-item {
+      height: 80px; /* Ajusta a altura das imagens menores */
+    }
+  }
+  

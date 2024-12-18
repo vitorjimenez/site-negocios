@@ -1,0 +1,19 @@
+.whatsapp-link{
+    height: 4rem;
+    width: 4rem;
+    position: fixed;
+    top: 80%;
+    left: 80%;
+    border-radius: 100%;
+}
+
+@media (min-width: 900px) {
+    .whatsapp-link{
+        height: 5rem;
+        width: 5rem;
+        position: fixed;
+        top: 80%;
+        left: 90%;
+        border-radius: 100%;
+    }
+}

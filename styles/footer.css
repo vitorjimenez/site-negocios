@@ -1,0 +1,19 @@
+.site-footer {
+    background-color: #333; /* Fundo escuro */
+    color: #fff; /* Texto claro */
+    text-align: center;
+    padding: 15px 10px; /* Espaçamento interno */
+    font-size: 14px;
+  }
+  
+  .footer-content p {
+    margin: 0; /* Remove margens do parágrafo */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 480px) {
+    .site-footer {
+      font-size: 12px; /* Reduz o tamanho do texto para dispositivos pequenos */
+    }
+  }

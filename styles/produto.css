@@ -1,0 +1,66 @@
+.produto-content {
+    display: flexbox;
+    margin: 4%;
+}
+
+.filtro {
+    font-size: 23px;
+    align-items: center;
+    color: #55ADFF;
+}
+
+.produto-main-content {
+    margin: 3%;
+}
+
+.produto-content {
+  display: flex; /* Corrigido de flexbox para flex */
+  margin: 4%;
+  flex-direction: column; /* Organiza os itens em coluna (ajuda na organização do layout) */
+  height: 100%; /* Faz com que o container ocupe toda a altura da tela */
+}
+
+.produto-main-content ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Exatamente 4 colunas */
+    gap: 20px; /* Espaçamento entre os itens */
+    padding: 0; /* Remove o espaçamento padrão */
+    margin: 0;
+    list-style-type: none; /* Remove marcadores */
+  }
+  
+  .produto-main-content li {
+    background-color: #fff; /* Fundo branco */
+    border: 1px solid #ccc; /* Borda fina */
+    border-radius: 4px; /* Bordas arredondadas */
+    text-align: center; /* Centraliza o texto */
+    padding: 10px; /* Espaçamento interno */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito ao passar o mouse */
+  }
+  
+  .produto-main-content li:hover {
+    transform: scale(1.05); /* Aumenta o tamanho ao passar o mouse */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+  }
+  
+  .img {
+    background-color: #D9D9D9; /* Cor para simular imagem */
+    height: 200px;
+    width: 100%; /* Largura total do elemento */
+    border-radius: 2px;
+    margin-bottom: 10px; /* Espaçamento abaixo da imagem */
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .produto-main-content ul {
+      grid-template-columns: repeat(2, 1fr); /* 2 produtos por linha em telas menores */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .produto-main-content ul {
+      grid-template-columns: 1fr; /* 1 produto por linha em telas muito pequenas */
+    }
+  }
